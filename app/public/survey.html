@@ -1,0 +1,339 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <style type="text/css">
+      body {
+        background-color: aliceblue;
+      }
+        footer {
+          position: fixed;
+          bottom: 0px;
+          width: 100%;
+          background-color: dimgray;
+          color: white;
+        }
+        footer a {
+          color: white;
+        }
+        footer a:hover {
+          color: aqua;
+        }
+      </style>
+
+    <title>Friend Finder</title>
+  </head>
+  <body>
+    <div class="container">
+      <h2 style="text-align: center;"><strong>Friend Survey</strong></h2>
+      <hr>
+      <h3><strong>About You</strong></h3>
+      <h5>Name (Required)</h5>
+      <input type="text" id="name" class="form-control" required>
+      <h5>Link to your Photo (Required)</h5>
+      <input type="text" id="photo" class="form-control" required>
+      <hr>
+      <h3><strong>About Your Personality</strong></h3>
+      <h5>Your mind is always buzzing with unexplored ideas and plans.</h5>
+      <label class="radio-inline" style="margin-right: 5px;">
+          <input type="radio" name="q1" class="q1" value="1"> 1 (Strongly Disagree)
+      </label>
+      <label class="radio-inline" style="margin-right: 5px;"> 
+        <input type="radio" name="q1" class="q1" value="2" > 2 (Disagree) 
+      </label>
+      <label class="radio-inline" style="margin-right: 5px;"> 
+          <input type="radio" name="q1" class="q1" value="3"> 3 (Neutral) 
+      </label>
+      <label class="radio-inline" style="margin-right: 5px;"> 
+        <input type="radio" name="q1" class="q1" value="4"> 4 (Agree) 
+      </label>
+      <label class="radio-inline" style="margin-right: 5px;"> 
+          <input type="radio" name="q1" class="q1" value="5"> 5 (Strongly Agree) 
+      </label>
+      <br>
+      <br>
+      <h5>Generally speaking, you rely more on your experience than your imagination.</h5>
+      <label class="radio-inline" style="margin-right: 5px;">
+          <input type="radio"  name="q2" class="q2" value="1"> 1 (Strongly Disagree)
+      </label>
+      <label class="radio-inline" style="margin-right: 5px;"> 
+        <input type="radio" name="q2" class="q2" value="2" > 2 (Disagree) 
+      </label>
+      <label class="radio-inline" style="margin-right: 5px;"> 
+          <input type="radio" name="q2" class="q2" value="3"> 3 (Neutral) 
+      </label>
+      <label class="radio-inline" style="margin-right: 5px;"> 
+        <input type="radio" name="q2" class="q2" value="4"> 4 (Agree) 
+      </label>
+      <label class="radio-inline" style="margin-right: 5px;"> 
+          <input type="radio" name="q2" class="q2" value="5"> 5 (Strongly Agree) 
+      </label>
+      <br>
+      <br>
+      <h5>You find it easy to stay relaxed and focused even when there is some pressure.</h5>
+      <label class="radio-inline" style="margin-right: 5px;">
+          <input type="radio"  name="q3" class="q3" value="1"> 1 (Strongly Disagree)
+      </label>
+      <label class="radio-inline" style="margin-right: 5px;"> 
+        <input type="radio" name="q3" class="q3" value="2" > 2 (Disagree) 
+      </label>
+      <label class="radio-inline" style="margin-right: 5px;"> 
+          <input type="radio" name="q3" class="q3" value="3"> 3 (Neutral) 
+      </label>
+      <label class="radio-inline" style="margin-right: 5px;"> 
+        <input type="radio" name="q3" class="q3" value="4"> 4 (Agree) 
+      </label>
+      <label class="radio-inline" style="margin-right: 5px;"> 
+          <input type="radio" name="q3" class="q3" value="5"> 5 (Strongly Agree) 
+      </label>
+      <br>
+      <br>
+      <h5>You rarely do something just out of sheer curiosity.</h5>
+      <label class="radio-inline" style="margin-right: 5px;">
+          <input type="radio"  name="q4" class="q4" value="1"> 1 (Strongly Disagree)
+      </label>
+      <label class="radio-inline" style="margin-right: 5px;"> 
+        <input type="radio" name="q4" class="q4" value="2" > 2 (Disagree) 
+      </label>
+      <label class="radio-inline" style="margin-right: 5px;"> 
+          <input type="radio" name="q4" class="q4" value="3"> 3 (Neutral) 
+      </label>
+      <label class="radio-inline" style="margin-right: 5px;"> 
+        <input type="radio" name="q4" class="q4" value="4"> 4 (Agree) 
+      </label>
+      <label class="radio-inline" style="margin-right: 5px;"> 
+          <input type="radio" name="q4" class="q4" value="5"> 5 (Strongly Agree) 
+      </label>
+      <br>
+      <br>
+      <h5>People can rarely upset you.</h5>
+      <label class="radio-inline" style="margin-right: 5px;">
+          <input type="radio"  name="q5" class="q5" value="1"> 1 (Strongly Disagree)
+      </label>
+      <label class="radio-inline" style="margin-right: 5px;"> 
+        <input type="radio" name="q5" class="q5" value="2" > 2 (Disagree) 
+      </label>
+      <label class="radio-inline" style="margin-right: 5px;"> 
+          <input type="radio" name="q5" class="q5" value="3"> 3 (Neutral) 
+      </label>
+      <label class="radio-inline" style="margin-right: 5px;"> 
+        <input type="radio" name="q5" class="q5" value="4"> 4 (Agree) 
+      </label>
+      <label class="radio-inline" style="margin-right: 5px;"> 
+          <input type="radio" name="q5" class="q5" value="5"> 5 (Strongly Agree) 
+      </label>
+      <br>
+      <br>
+      <h5>It is often difficult for you to relate to other people’s feelings.</h5>
+      <label class="radio-inline" style="margin-right: 5px;">
+          <input type="radio"  name="q6" class="q6" value="1"> 1 (Strongly Disagree)
+      </label>
+      <label class="radio-inline" style="margin-right: 5px;"> 
+        <input type="radio" name="q6" class="q6" value="2" > 2 (Disagree) 
+      </label>
+      <label class="radio-inline" style="margin-right: 5px;"> 
+          <input type="radio" name="q6" class="q6" value="3"> 3 (Neutral) 
+      </label>
+      <label class="radio-inline" style="margin-right: 5px;"> 
+        <input type="radio" name="q6" class="q6" value="4"> 4 (Agree) 
+      </label>
+      <label class="radio-inline" style="margin-right: 5px;"> 
+          <input type="radio" name="q6" class="q6" value="5"> 5 (Strongly Agree) 
+      </label>
+      <br>
+      <br>
+      <h5>In a discussion, truth should be more important than people’s sensitivities.</h5>
+      <label class="radio-inline" style="margin-right: 5px;">
+          <input type="radio"  name="q7" class="q7" value="1"> 1 (Strongly Disagree)
+      </label>
+      <label class="radio-inline" style="margin-right: 5px;"> 
+        <input type="radio" name="q7" class="q7" value="2" > 2 (Disagree) 
+      </label>
+      <label class="radio-inline" style="margin-right: 5px;"> 
+          <input type="radio" name="q7" class="q7" value="3"> 3 (Neutral) 
+      </label>
+      <label class="radio-inline" style="margin-right: 5px;"> 
+        <input type="radio" name="q7" class="q7" value="4"> 4 (Agree) 
+      </label>
+      <label class="radio-inline" style="margin-right: 5px;"> 
+          <input type="radio" name="q7" class="q7" value="5"> 5 (Strongly Agree) 
+      </label>
+      <br>
+      <br>
+      <h5>You rarely get carried away by fantasies and ideas.</h5>
+      <label class="radio-inline" style="margin-right: 5px;">
+          <input type="radio"  name="q8" class="q8" value="1"> 1 (Strongly Disagree)
+      </label>
+      <label class="radio-inline" style="margin-right: 5px;"> 
+        <input type="radio" name="q8" class="q8" value="2" > 2 (Disagree) 
+      </label>
+      <label class="radio-inline" style="margin-right: 5px;"> 
+          <input type="radio" name="q8" class="q8" value="3"> 3 (Neutral) 
+      </label>
+      <label class="radio-inline" style="margin-right: 5px;"> 
+        <input type="radio" name="q8" class="q8" value="4"> 4 (Agree) 
+      </label>
+      <label class="radio-inline" style="margin-right: 5px;"> 
+          <input type="radio" name="q8" class="q8" value="5"> 5 (Strongly Agree) 
+      </label>
+      <br>
+      <br>
+      <h5>You think that everyone’s views should be respected regardless of whether they are supported by facts or not.</h5>
+      <label class="radio-inline" style="margin-right: 5px;">
+          <input type="radio"  name="q9" class="q9" value="1"> 1 (Strongly Disagree)
+      </label>
+      <label class="radio-inline" style="margin-right: 5px;"> 
+        <input type="radio" name="q9" class="q9" value="2" > 2 (Disagree) 
+      </label>
+      <label class="radio-inline" style="margin-right: 5px;"> 
+          <input type="radio" name="q9" class="q9" value="3"> 3 (Neutral) 
+      </label>
+      <label class="radio-inline" style="margin-right: 5px;"> 
+        <input type="radio" name="q9" class="q9" value="4"> 4 (Agree) 
+      </label>
+      <label class="radio-inline" style="margin-right: 5px;"> 
+          <input type="radio" name="q9" class="q9" value="5"> 5 (Strongly Agree) 
+      </label>
+      <br>
+      <br>
+      <h5>You feel more energetic after spending time with a group of people.</h5>
+      <label class="radio-inline" style="margin-right: 5px;">
+          <input type="radio"  name="q10" class="q10" value="1"> 1 (Strongly Disagree)
+      </label>
+      <label class="radio-inline" style="margin-right: 5px;"> 
+        <input type="radio" name="q10" class="q10" value="2" > 2 (Disagree) 
+      </label>
+      <label class="radio-inline" style="margin-right: 5px;"> 
+          <input type="radio" name="q10" class="q10" value="3"> 3 (Neutral) 
+      </label>
+      <label class="radio-inline" style="margin-right: 5px;"> 
+        <input type="radio" name="q10" class="q10" value="4"> 4 (Agree) 
+      </label>
+      <label class="radio-inline" style="margin-right: 5px;"> 
+          <input type="radio" name="q10" class="q10" value="5"> 5 (Strongly Agree) 
+      </label>
+      <br>
+      <br>
+      <button type="submit" id="submit" class="btn btn-primary btn-block btn-lg">Submit</button>
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <!--Footer-->
+    <footer>
+      <div class="container">
+        <br>
+        <p><a href="/api/friends">API Friends List</a> | <a href="http://github.com/Byrnetp/Friend-finder">Github Repository</a> <span style="float: right;">Created by Travis Byrne</span></p>
+      </div>
+    </footer>
+    <!--Modal-->
+    <div id="results-modal" class="modal fade" role="dialog">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+              <h2 class="modal-title"><strong>Best Match</strong></h2>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+              </button>
+          </div>
+          <div class="modal-body">
+            <h2 id="match-name">match name</h2>
+            <img id="match-img" src="" alt="match photo" style="width: 80%;">
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+    <!--Friend match script-->
+    <script type="text/javascript">
+      // Capture the form inputs
+      $('#submit').on('click', (event) => {
+        event.preventDefault();
+
+        // Form validation function
+        function validateForm() {
+          let isValid = true;
+          $('.form-control').each(function() {
+            if ($(this).val() == '') {
+              isValid = false;
+            }
+          });
+          
+          for (let i = 1; i < 11; i++) {
+            let question = '.q' + i;
+            let radios = $(question);
+            for (let i = 0; i < 5; i++) {
+              if (radios[i].checked === true) {
+                break;
+              }
+              if (i === 4) {
+                isValid = false;
+              }
+            }
+          }
+          return isValid;
+        }
+
+        // If all required fields are filled
+        if (validateForm()) {
+          // Collect radio button data
+          let scores = [];
+          for (let i = 1; i < 11; i++) {
+            let question = '.q' + i;
+            let radios = $(question);
+            for (let i = 0; i < 5; i++) {
+              if (radios[i].checked === true) {
+                scores.push(radios[i].value);
+                break;
+              }
+            }
+          }
+          // Create an object for the user's data
+          const userData = JSON.stringify({
+            name: $('#name').val(),
+            photo: $('#photo').val(),
+            scores: scores
+          });
+
+          // Use AJAX to post the data to the friends API
+          const xhr = new XMLHttpRequest();
+          
+          xhr.onload = function() {
+            // If server responds properly
+            if (xhr.status === 200) {
+              const data = JSON.parse(xhr.responseText);
+              // Post the result from the AJAX post so that the best match's name and photo are displayed
+              $('#match-name').text(data.name);
+              $('#match-img').attr('src', data.photo);
+
+              // Show the modal with the best match
+              $('#results-modal').modal('toggle');
+            }
+          }
+
+          xhr.open('POST', '/api/friends', true);
+          xhr.send(userData); 
+
+        } else {
+          alert('Please fill out all survey fields!');
+        }
+      });
+    </script>
+  </body>
+</html>

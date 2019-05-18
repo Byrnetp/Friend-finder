@@ -1,0 +1,25 @@
+[{
+    "name" : "Martian Mary",
+    "photo" : "https://images.pexels.com/photos/2080802/pexels-photo-2080802.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260",
+    "scores" : [5,1,4,1,4,5,5,2,2,1]
+},
+{
+    "name" : "Photographer Phoebe",
+    "photo" : "https://images.pexels.com/photos/2050979/pexels-photo-2050979.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    "scores" : [2,5,4,3,4,1,2,2,4,5]
+},
+{
+    "name" : "Farmer Feng",
+    "photo" : "https://images.pexels.com/photos/2294478/pexels-photo-2294478.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260",
+    "scores" : [1,5,5,5,5,4,5,5,1,1]
+},
+{
+    "name" : "Romantic Ryan",
+    "photo" : "https://images.pexels.com/photos/2310987/pexels-photo-2310987.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    "scores" : [5,2,4,1,2,1,1,2,5,5]
+},
+{
+    "name" : "Candy-addict Clarissa",
+    "photo" : "https://images.pexels.com/photos/2156656/pexels-photo-2156656.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    "scores" : [3,2,1,3,2,2,3,2,4,5]
+}]
