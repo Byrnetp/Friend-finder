@@ -14,11 +14,14 @@
       }
       footer {
         width: 100%;
-        background-color: rgb(180, 180, 180);
-        color: white;
+        background-color: lavender;
+        color: black;
       }
       footer a {
-        color: white;
+        color: black;
+      }
+      footer p {
+        margin-bottom: 0px;
       }
       footer a:hover {
         color: dodgerblue;
@@ -38,6 +41,21 @@
       }
       .radio-inline {
         margin-right: 5px;
+      }
+      footer p {
+        display: inline-block;
+      }
+      #footer-links {
+        float: left;
+      }
+      #signature {
+        float: right;
+      }
+      @media screen and (max-width: 448px) {
+        footer p {
+          margin-left: auto;
+          margin-right: auto;
+        }
       }
     </style>
 
@@ -241,7 +259,8 @@
     <footer>
       <div class="container">
         <br>
-        <p><a href="/api/friends">API Friends List</a> | <a href="http://github.com/Byrnetp/Friend-finder">Github Repository</a> <span style="float: right;">Created by Travis Byrne</span></p>
+        <p id="footer-links"><a href="/api/friends">API Friends List</a> | <a href="http://github.com/Byrnetp/Friend-finder">Github Repository</a></p>
+        <p id="signature">Created by Travis Byrne</p>
         <br>
       </div>
     </footer>
