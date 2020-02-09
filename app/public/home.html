@@ -24,12 +24,29 @@
         width: 100%;
         background-color: lavender;
         color: black;
+        min-height: 70px;
       }
       footer a {
         color: black;
       }
       footer a:hover {
         color: dodgerblue;
+      }
+      footer p {
+        display: inline-block;
+      }
+      #footer-links {
+        float: left;
+      }
+      #signature {
+        float: right;
+      }
+      @media screen and (max-width: 448px) {
+        footer p {
+          float: none!important;
+          display: block;
+          text-align: center;
+        }
       }
     </style>
 
@@ -49,10 +66,13 @@
         <a href="/survey" class="btn btn-primary">Take the Survey</a>
       </div>
     </div>
+    <!--Footer-->
     <footer>
       <div class="container">
         <br>
-        <p><a href="/api/friends">API Friends List</a> | <a href="http://github.com/Byrnetp/Friend-finder">Github Repository</a> <span style="float: right;">Created by Travis Byrne</span></p>
+        <p id="footer-links"><a href="/api/friends">API Friends List</a> | <a href="http://github.com/Byrnetp/Friend-finder">Github Repository</a></p>
+        <p id="signature">Created by Travis Byrne</p>
+        <br>
       </div>
     </footer>
     <!-- Optional JavaScript -->
